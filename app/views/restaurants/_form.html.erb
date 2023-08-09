@@ -1,0 +1,7 @@
+<%= simple_form_for @restaurant do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address, input_html: { min: 0, max: 5 } %>
+  <%= f.input :phone_number %>
+  <%= f.input :category %>
+  <%= f.submit class: 'btn btn-primary mt-2' %>
+<% end %>
